@@ -1,3 +1,5 @@
+#Solution using HashMap
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         Map = {} #mapping the value to the index of that value. Previous value is going to be mapped
