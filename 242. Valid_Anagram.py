@@ -1,4 +1,4 @@
- #Approach 1: Use Hashmap 
+ # Approach 1: Use Hashmap 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         #return Counter(s) == Counter(t)
@@ -21,3 +21,13 @@ class Solution:
             if countS[c] != countT.get(c,0):
                 return False
         return True
+# Time: O(n) or O(s+t)
+# Space: O(s+t)
+
+#Approach 2: Sorting both string and then comparing it
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        
+        return sorted(s) == sorted(t)
+        
