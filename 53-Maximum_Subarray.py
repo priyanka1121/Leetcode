@@ -10,3 +10,4 @@ class Solution:
                 maxSum = curSum
         return maxSum
 # Time: O(n)
+# Kadane's Algorithm
